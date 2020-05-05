@@ -3,7 +3,11 @@ package com.funamentals.java;
 public class Main {
 
     public static void main(String[] args) {
-        lesson5Examples();
+        lesson8Example();
+        // lesson7Examples();
+        // lesson6Examples();
+        // lesson5Examples();
+    // write your code here
         // single line comment
         //System.out.println("Hello Java");
         //System.out.println(This is my first sentence);
@@ -11,10 +15,47 @@ public class Main {
         // System.out.println(This Java course is cool);
         //System.out.println(I am learning new stuff every day);
 
-
-
         //myHouseExample();
     }// end method main
+
+    public static void lesson8Example() {
+           Lesson8 myEight = new Lesson8();
+           myEight.basicIfElseExample(2,2);
+           myEight.basicIfStatement(4,4);
+           myEight.basicIfElseChainExample(33);
+           myEight.basicIfAndExample(108);
+           myEight.basicSwitchExample(2);
+           myEight.basicWhileExample();
+    } // end method lesson8Examples
+
+    public static void lesson7Examples() {
+        Lesson7 mySeven = new Lesson7();
+        mySeven.basicMath();
+        mySeven.exampleModulus();
+        //mySeven.addTwoNumbers();
+        mySeven.exampleAssignment();
+        mySeven.exampleLeftShift();
+        mySeven.exampleRightShift();
+        mySeven.exampleAnd();
+        mySeven.exampleXOR();
+        mySeven.exampleRelational();
+        mySeven.exampleIncrement();
+        mySeven.exampleDecrement();
+    } // end method lesson7Examples
+
+    public static void lesson6Examples() {
+        Lesson6 mySix = new Lesson6();
+        mySix.exampleChaAt();
+        mySix.exampleConcat("has awesome donuts");
+        mySix.exampleEquals("LaMars");
+        System.out.println(mySix.exampleLowercase());
+        System.out.println(mySix.exampleUppercase());
+        mySix.exampleLength();
+        mySix.example("pizza",2);
+        mySix.examplesChar();
+        mySix.exampleEscape();
+
+    } // end method lesson6Examples
 
     public static void  lesson5Examples() {
         Lesson5 myFive = new Lesson5();
