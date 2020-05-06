@@ -3,7 +3,9 @@ package com.funamentals.java;
 public class Main {
 
     public static void main(String[] args) {
-        lesson8Example();
+        lesson9Examples();
+        // beerSong();
+        //lesson8Example();
         // lesson7Examples();
         // lesson6Examples();
         // lesson5Examples();
@@ -18,6 +20,22 @@ public class Main {
         //myHouseExample();
     }// end method main
 
+    public static void lesson9Examples() {
+        Lesson9 myNine = new Lesson9();
+        myNine.basicIntArray();
+        myNine.basicStringArray();
+        myNine.basicTwoDimensionalArray();
+        myNine.basicJaggedArray();
+    } // end method lesson9Examples
+
+    public static void beerSong() {
+        BottlesOfBeerSong song = new BottlesOfBeerSong();
+        song.timeToSing();
+    }
+
+
+
+
     public static void lesson8Example() {
            Lesson8 myEight = new Lesson8();
            myEight.basicIfElseExample(2,2);
@@ -26,6 +44,9 @@ public class Main {
            myEight.basicIfAndExample(108);
            myEight.basicSwitchExample(2);
            myEight.basicWhileExample();
+           myEight.basicDoWhileExample();
+           myEight.basicForLoopExample();
+           System.out.println(myEight.basicBranchingExample(7));
     } // end method lesson8Examples
 
     public static void lesson7Examples() {
