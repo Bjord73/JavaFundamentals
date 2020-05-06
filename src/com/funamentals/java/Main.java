@@ -1,9 +1,12 @@
 package com.funamentals.java;
 
+import com.fundamentals.lesson10.Lesson10;
+
 public class Main {
 
     public static void main(String[] args) {
-        lesson9Examples();
+        lesson10Example();
+        //lesson9Examples();
         // beerSong();
         //lesson8Example();
         // lesson7Examples();
@@ -19,6 +22,17 @@ public class Main {
 
         //myHouseExample();
     }// end method main
+
+    public static void lesson10Example() {
+        House yourHouse = new House();
+        yourHouse.doorOpenClose();
+        //yourHouse.windowOpenClosed(); // cannot access
+        yourHouse.openGarage();
+        yourHouse.closedGarage();
+        Lesson10 myTen = new Lesson10();
+        //meTen.showProtected(); // cannot access
+        //myTen.showProtected(); // cannot access
+    } // end method lesson10Examples
 
     public static void lesson9Examples() {
         Lesson9 myNine = new Lesson9();
