@@ -5,9 +5,11 @@ import com.fundamentals.lesson10.Lesson10;
 public class Main {
 
     public static void main(String[] args) {
-        lesson10Example();
+        CarExamples();
+        //lesson11Examples();
+        //lesson10Example();
         //lesson9Examples();
-        // beerSong();
+        // beerSongExamples();
         //lesson8Example();
         // lesson7Examples();
         // lesson6Examples();
@@ -22,6 +24,23 @@ public class Main {
 
         //myHouseExample();
     }// end method main
+
+    public static void CarExamples() {
+        Car car = new Car();
+        car.setDoors("String door");
+        car.setDoors("plastic");
+        System.out.println("The foundation is made of"+car.getBody());
+        //carExample();
+    } // end method main
+
+    public static void lesson11Examples() {
+        House house = new House("Blue");
+        //house.foundation = "concrete";
+        house.setFoundation("concrete");
+        //house.rootType = "shingle";
+        house.setRootType("shingle");
+        System.out.println("The foundation is made of"+house.getFoundation());
+    } // end lesson11Examples
 
     public static void lesson10Example() {
         House yourHouse = new House();
