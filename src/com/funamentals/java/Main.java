@@ -2,10 +2,29 @@ package com.funamentals.java;
 
 import com.fundamentals.lesson10.Lesson10;
 
+/* This class was created when the project
+* was created*/
 public class Main {
+    public  static int num = 0;
+
+    static {
+        System.out.println("Static Block 1");
+        num = 42;
+    } // static block
+
+    static {
+        System.out.println("Static block 2");
+        num = 63;
+    } // end static block
 
     public static void main(String[] args) {
-        CarExamples();
+        lesson16Examples();
+        //lesson15Examples();
+        //lesson6Exercise6();
+        //lesson14Examples();
+        //SmartCarExercise();
+        //lesson12Examples();
+        //CarExamples();
         //lesson11Examples();
         //lesson10Example();
         //lesson9Examples();
@@ -21,15 +40,67 @@ public class Main {
         //System.out.println(I am new to Java);
         // System.out.println(This Java course is cool);
         //System.out.println(I am learning new stuff every day);
-
         //myHouseExample();
     }// end method main
+
+    public static void lesson16Examples() {
+        Lesson16 my16 = new Lesson16();
+        my16.showEnum();
+
+        my16.myFavoriteFlavor(Lesson16.IceCreamFlavors.CHOCOLATE);
+
+        Lesson16Enum d1[] = Lesson16Enum.values();
+        for(Lesson16Enum day : d1) {
+            System.out.println(day.name() + " at index " + day.ordinal() +
+                    " day number = " + day.getDayNum());
+        } // end for loop
+
+
+
+    } // end method lesson16Examples
+
+    public static void lesson15Examples() {
+        int[] myKeys = {0,1,2,3,4,5,6,7,8,9};
+        Lesson15Child abs = new Lesson15Child(20, myKeys,0, "Color");
+        abs.receiveCall(); // defined in child
+        abs.sendCall(); // defined in child
+        abs.endCall(); // defined in parent from interface
+
+    }
+
+    public static void lesson14Examples() {
+        // Can not change value of a final variable
+        //Lesson14.MY_FIRST_FINAL = 10;
+        int sum = Lesson14.MY_FIRST_FINAL * 2;
+        System.out.println(sum);
+
+        Lesson14.myStaticMethod(10);
+        System.out.println("Block number is " + num);
+    } // end method lesson14Examples
+
+    public static void SmartCarExercise() {
+        SmartCar mySmartCar = new SmartCar();
+        mySmartCar.getPower(); // from Car parent class
+        mySmartCar.setBody("engine"); // from Condo class
+        System.out.println(" The foundation is body"+ mySmartCar.getPower());
+    } // end method lesson12Examples
+
+    public static void lesson12Examples() {
+        Condo myCondo = new Condo();
+        myCondo.doorOpenClose(); // from House parent class
+        myCondo.setBalcony("railing"); // from Condo class
+
+        House myHouse = new House();
+        myHouse.doorOpenClose("Close");
+    } // end method lesson12Examples
 
     public static void CarExamples() {
         Car car = new Car();
         car.setDoors("String door");
         car.setDoors("plastic");
-        System.out.println("The foundation is made of"+car.getBody());
+        System.out.println("The foundation is made of a frame");
+        System.out.println("with rims");
+        System.out.println("green paint job");
         //carExample();
     } // end method main
 
@@ -67,8 +138,6 @@ public class Main {
     }
 
 
-
-
     public static void lesson8Example() {
            Lesson8 myEight = new Lesson8();
            myEight.basicIfElseExample(2,2);
@@ -96,6 +165,17 @@ public class Main {
         mySeven.exampleIncrement();
         mySeven.exampleDecrement();
     } // end method lesson7Examples
+
+
+    public static void lesson6Exercise6() {
+        Lesson6Exercise myExercise6 = new Lesson6Exercise();
+        myExercise6.toString();
+        myExercise6.examplesChar();
+        myExercise6.exampleString();
+
+
+        }
+
 
     public static void lesson6Examples() {
         Lesson6 mySix = new Lesson6();

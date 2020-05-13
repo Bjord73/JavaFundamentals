@@ -1,5 +1,8 @@
 package com.funamentals.java;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+import org.w3c.dom.ls.LSOutput;
+
 public class House {
     private String foundation;
     private String rootType;
@@ -11,7 +14,7 @@ public class House {
     } // end constructor
 
     public House(String doorColor) {
-        System.out.println("The door color is"+ doorColor);
+        System.out.println("The door color is" + doorColor);
     } // end constructor
 
     public House(String foundation, String rootType, String doorColor, int windowSize) {
@@ -63,6 +66,13 @@ public class House {
         System.out.println("The door opens");
         windowOpenClose();
     } // end method doorOpenClose
+
+     // overload method
+    public void doorOpenClose(String message) {
+        System.out.println(message);
+    } // end method dorOpenClose
+
+
 
     /* The below method are demonstrating lesson 10 Access modifiers*/
     // private means only accessible from the class

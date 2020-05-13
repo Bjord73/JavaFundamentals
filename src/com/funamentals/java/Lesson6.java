@@ -53,7 +53,7 @@ public class Lesson6 {
     //Method for showing char data type
     public  void  examplesChar() {
         char c1 = 't';
-        char c2 = '\u00A7';
+        char c2 = '\u00B6';
         System.out.println(c2);
     }// end method exampleChar
 
